@@ -1,0 +1,251 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./../assets/css/style.css"/>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./../assets/css/animate.css" />
+    <link rel="stylesheet" href="./../assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="./../assets/css/lineicons.css" />
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<header class="header-area">
+<div class="navbar-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="./../index.html">
+                        <img src="./../assets/images/logo/logo.png" width="40px" height=40px" alt="Logo" />
+                    </a>
+                    <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                    >
+                        <span class="toggler-icon"> </span>
+                        <span class="toggler-icon"> </span>
+                        <span class="toggler-icon"> </span>
+                    </button>
+
+                    <div
+                            class="collapse navbar-collapse sub-menu-bar"
+                            id="navbarSupportedContent"
+                    >
+                        <ul id="nav" class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="page-scroll active" href="./../index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="./../index.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="./../index.html">Наша команда</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="./../index.html">Изучение</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- navbar collapse -->
+
+                    <div class="navbar-btn d-none d-sm-inline-block">
+                        <a
+                                class="main-btn"
+                                data-scroll-nav="0"
+                                rel="nofollow"
+                                style="text-decoration: none;"
+                        >
+                            Донаты
+                        </a>
+                    </div>
+                </nav>
+                <!-- navbar -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</div>
+<!-- navbar area -->
+</header>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Начать Тест</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Правила теста</span></div>
+        <div class="info-list">
+            <div class="info">1. У вас есть только <span>15 секунд</span> на каждый вопрос.</div>
+            <div class="info">2. Ответив на вопрос, вы уже не можете изменить ответ.</div>
+            <div class="info">3. Вы не можете выберать несколько вариантов. </div>
+            <div class="info">4. Вы не можете выйти из теста, не закончив его.</div>
+            <div class="info">5. Нарушение правил автоматически приводит к завершению теста и его аннулированию.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Выйти</button>
+            <button class="restart">Продолжить</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Тест на знание темы</div>
+            <div class="timer">
+                <div class="time_left_txt">Осталось времени</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer class="quiz_footer">
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Следующий</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Вы завершили Тест!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Пройти заново</button>
+            <button class="quit">Завершить</button>
+        </div>
+    </div>
+
+
+<!--====== FOOTER PART START ======-->
+<footer id="footer" class="footer-area pt-120">
+    <div class="container">
+        <!-- subscribe area -->
+        <div class="footer-widget pb-100">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div
+                            class="footer-about mt-50 wow fadeIn"
+                            data-wow-duration="1s"
+                            data-wow-delay="0.2s"
+                    >
+                        <a class="logo" href="javascript:void(0)">
+                            <img src="./../assets/images/logo/logo.png" alt="logo" />
+                        </a>
+                        <p class="text">
+                            Платформа для изучения русского языка
+                        </p>
+                        <ul class="social">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="lni lni-facebook-filled"> </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="lni lni-twitter-filled"> </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="lni lni-instagram-filled"> </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="lni lni-linkedin-original"> </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer about -->
+                </div>
+                <div class="col-lg-5 col-md-7 col-sm-12">
+                    <div class="footer-link d-flex mt-50 justify-content-sm-between">
+                        <div
+                                class="link-wrapper wow fadeIn"
+                                data-wow-duration="1s"
+                                data-wow-delay="0.4s"
+                        >
+                            <div class="footer-title">
+                                <h4 class="title">Быстрые ссылки</h4>
+                            </div>
+                            <ul class="link">
+                                <li><a href="./../index.html" style="text-decoration: none">Главная</a></li>
+                                <li><a href="./../index.html" style="text-decoration: none">О нас</a></li>
+                                <li><a href="./../index.html" style="text-decoration: none">Наша команда</a></li>
+                                <li><a href="./../index.html" style="text-decoration: none">Изучение</a></li>
+                                <li><a href="./../index.html" style="text-decoration: none">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer link -->
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12">
+                    <div
+                            class="footer-contact mt-50 wow fadeIn"
+                            data-wow-duration="1s"
+                            data-wow-delay="0.8s"
+                    >
+                        <div class="footer-title">
+                            <h4 class="title">Contact Us</h4>
+                        </div>
+                        <ul class="contact">
+                            <li>+7 701 999 77 77</li>
+                            <li>211111@astanait.edu.kz</li>
+                            <li>www.ruedu.com</li>
+                            <li>
+                                123 Stree New York City , United <br />
+                                States Of America 750.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer contact -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- footer widget -->
+    </div>
+    <!-- container -->
+    <div id="particles-2"></div>
+</footer>
+<!--====== FOOTER PART ENDS ======-->
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
